@@ -1,0 +1,5 @@
+SELECT city,country,population FROM north_american_cities where country = "Canada";
+SELECT * FROM north_american_cities where country = "United States" ORDER BY latitude desc;
+SELECT * FROM north_american_cities WHERE longitude <(SELECT longitude FROM north_american_cities where city like "chicago") Order by longitude asc;
+SELECT * FROM north_american_cities WHERE Country like "Mexico" ORDER BY population desc limit 2 ;
+SELECT city,population FROM north_american_cities WHERE Country like "united states" ORDER BY population desc limit 2 offset 2 ;

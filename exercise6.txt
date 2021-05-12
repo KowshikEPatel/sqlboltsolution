@@ -1,0 +1,3 @@
+SELECT title,international_sales,domestic_sales FROM movies join boxoffice on movies.id=boxoffice.movie_id;
+SELECT title,international_sales,domestic_sales FROM movies join boxoffice on movies.id=boxoffice.movie_id where international_sales>domestic_sales;
+SELECT title,rating FROM movies join boxoffice on movies.id=boxoffice.Movie_id order by rating desc;

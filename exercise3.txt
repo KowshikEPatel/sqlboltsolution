@@ -1,0 +1,4 @@
+SELECT * FROM movies WHERE title LIKE "Toy%"; (remember = is a case sensitive exact comparision)
+SELECT * FROM movies WHERE director = "John Lasseter";
+SELECT title,director FROM movies WHERE director != "John Lasseter";
+SELECT * FROM movies WHERE title LIKE "WALL%";

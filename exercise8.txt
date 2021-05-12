@@ -1,0 +1,2 @@
+SELECT name,building,role FROM employees where building IS NULL;
+SELECT * FROM buildings left join employees on buildings.building_name=employees.building where role IS NULL;

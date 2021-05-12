@@ -1,0 +1,2 @@
+Delete from Movies where year < 2005
+Delete from Movies where director="Andrew Stanton"

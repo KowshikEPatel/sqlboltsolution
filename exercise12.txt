@@ -1,0 +1,2 @@
+SELECT director,count() FROM movies group by director;
+SELECT director,sum(international_sales+domestic_sales) FROM movies join boxoffice on movies.id=boxoffice.movie_id group by director;

@@ -1,0 +1,3 @@
+SELECT title,(international_sales+domestic_sales)/1e6 FROM movies left join boxoffice on movies.id=boxoffice.movie_id;
+SELECT title,(rating*10) FROM movies left join boxoffice ON Movies.id=boxoffice.movie_id;
+SELECT title,year FROM movies where (year%2)==0;

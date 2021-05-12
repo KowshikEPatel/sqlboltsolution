@@ -1,0 +1,3 @@
+SELECT distinct building from employees;
+SELECT * from buildings;
+SELECT distinct building_name, role from buildings left join employees on building_name = building;
